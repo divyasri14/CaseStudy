@@ -6,10 +6,13 @@ public class DemoOfCasestudy1 {
 		
 		Casestudy1 D = new Casestudy1();
 		D .InvokeChrome();
+		D.getText();
 
 		D .Login();
 		
-		D .SignIn("swetha.mca0909@gmail.com","10111985");
+		D .SignIn("swetha.mca0909@gmail.com","10111985","Selenium");
+		
+		
 		
 		
 

@@ -24,18 +24,27 @@ public class Casestudy1 {
 		
 	}
 	
+	public void getText() {
+		
+		String text = dr1.getTitle();
+		System.out.println("Title" +text);
+		
+	}
+	
 	public void Login() {
 		
 		dr1.findElement(By.linkText("Log In")).click();
 	}
 	
 	
-	public void SignIn(String Email , String Password) {
+	public void SignIn(String Email , String Password,String search) {
 		
 		dr1.findElement(By.id("si_popup_email")).sendKeys(Email);
 		dr1.findElement(By.id("si_popup_passwd")).sendKeys(Password);
-	
-		
+		dr1.findElement(By.xpath("//button[@class='clik_btn_log btn-block pagesense_en_track']")).click();
+		dr1.findElement(By.xpath("//input[@id='homeSearchBar']")).sendKeys(search);
+		System.out.println("i am here" +search);
+			
 		//dr1.findElementsById(Password = "10111985");
 		
 		
